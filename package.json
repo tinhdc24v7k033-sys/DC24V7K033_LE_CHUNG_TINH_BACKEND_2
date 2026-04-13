@@ -2,6 +2,14 @@
   "name": "backend1",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/tinhdc24v7k033-sys/DC24V7K033_LE_CHUNG_TINH_BACKEND_1#readme",
+  "bugs": {
+    "url": "https://github.com/tinhdc24v7k033-sys/DC24V7K033_LE_CHUNG_TINH_BACKEND_1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinhdc24v7k033-sys/DC24V7K033_LE_CHUNG_TINH_BACKEND_1.git"
+  },
   "license": "ISC",
   "author": "LE CHUNG TINH",
   "type": "commonjs",
