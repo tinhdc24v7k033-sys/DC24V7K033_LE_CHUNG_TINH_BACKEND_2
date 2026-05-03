@@ -1,7 +1,9 @@
+require('dotenv').config()
 const app = require("./app");
 const config = require("./app/config");
 const MongoDB = require("./app/utils/mongodb.util");
-
+const session = require("express-session");
+const passport = require("./app/config/passport");
 async function startServer() {
   try {
     await MongoDB.connect(config.db.uri);
@@ -16,5 +18,7 @@ async function startServer() {
     process.exit();
   }
 }
-
+app.use(session({ secret: "secret", resave: false, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 startServer();
